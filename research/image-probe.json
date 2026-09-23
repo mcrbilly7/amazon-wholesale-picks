@@ -1,0 +1,37 @@
+[
+  {
+    "asin": "B00IYO0RL6",
+    "amazonUrl": "https://www.amazon.com/dp/B00IYO0RL6",
+    "imageUrl": "https://m.media-amazon.com/images/I/61VKOx1JbWL._AC_SL1500_.jpg",
+    "priceText": "",
+    "notes": "Page redirected to https://www.amazon.com/dp/B000WJMM0U?th=1 (OXO Good Grips Expandable Utensil Organizer); main buy box showed Currently unavailable, with no visible price."
+  },
+  {
+    "asin": "B09B188SM5",
+    "amazonUrl": "https://www.amazon.com/dp/B09B188SM5",
+    "imageUrl": "https://m.media-amazon.com/images/I/71SWJBvwIkL._AC_SL1500_.jpg",
+    "priceText": "$24.95",
+    "notes": "Product page loaded normally; visible Buy New price was $24.95."
+  },
+  {
+    "asin": "B01FRSYVOK",
+    "amazonUrl": "https://www.amazon.com/dp/B01FRSYVOK",
+    "imageUrl": "https://m.media-amazon.com/images/I/71lRLVSvLkL._AC_SL1500_.jpg",
+    "priceText": "",
+    "notes": "Page redirected to https://www.amazon.com/dp/B01BPDXVXI?th=1 (Joseph Joseph Nest Plus Utensil 5-Piece Set); main buy box showed Currently unavailable, with no visible price."
+  },
+  {
+    "asin": "B00KH9B2IS",
+    "amazonUrl": "https://www.amazon.com/dp/B00KH9B2IS",
+    "imageUrl": "",
+    "priceText": "",
+    "notes": "Amazon returned HTTP 404 Page Not Found; no product image or price."
+  },
+  {
+    "asin": "B07G7G5V5H",
+    "amazonUrl": "https://www.amazon.com/dp/B07G7G5V5H",
+    "imageUrl": "",
+    "priceText": "",
+    "notes": "Amazon returned HTTP 404 Page Not Found; no product image or price."
+  }
+]
