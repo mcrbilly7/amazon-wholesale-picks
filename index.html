@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Wholesale → Amazon research catalog for a Texas LLC — curated product picks with ungating notes, wholesale channels, and cautions." />
+  <title>Wholesale → Amazon · Texas LLC Research Picks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="mesh" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="brand-lockup">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <p class="eyebrow">Texas LLC · Product Research</p>
+        <p class="brand-name">Amazon Wholesale Picks</p>
+      </div>
+    </div>
+    <p class="header-meta">Snapshot · 2026-09-23</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="hero-kicker">Curated research catalog</p>
+        <h1>Wholesale <span class="arrow">→</span> Amazon</h1>
+        <p class="hero-sub">
+          Sixteen research picks for a Texas LLC building a wholesale-to-Amazon pipeline —
+          Home &amp; Kitchen, Pet Accessories, Office, and Sports &amp; Outdoors —
+          with ungating signals, wholesale notes, and real cautions.
+        </p>
+        <div class="hero-stats" role="list">
+          <div class="stat" role="listitem">
+            <span class="stat-num">16</span>
+            <span class="stat-label">Products</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Categories</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-num">TX</span>
+            <span class="stat-label">LLC Focus</span>
+          </div>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2 class="hero-card-title">How to use this catalog</h2>
+        <ol class="hero-steps">
+          <li>Filter by category or ungating level</li>
+          <li>Open Details for wholesale notes &amp; cautions</li>
+          <li>Verify ASIN eligibility in Seller Central</li>
+          <li>Run Revenue Calculator before any PO</li>
+        </ol>
+        <p class="hero-card-note">Prices are approximate public snapshots as of 2026-09-23. Always re-check.</p>
+      </aside>
+    </section>
+
+    <div class="filter-bar" id="filter-bar">
+      <div class="filter-inner">
+        <label class="search-wrap">
+          <span class="visually-hidden">Search products</span>
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+            <path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <input type="search" id="search" placeholder="Search name, brand, ASIN…" autocomplete="off" />
+        </label>
+
+        <div class="chip-row" id="category-chips" role="group" aria-label="Category filters">
+          <button type="button" class="chip is-active" data-category="all">All</button>
+          <button type="button" class="chip" data-category="Home &amp; Kitchen">Home &amp; Kitchen</button>
+          <button type="button" class="chip" data-category="Pet Accessories">Pet Accessories</button>
+          <button type="button" class="chip" data-category="Office">Office</button>
+          <button type="button" class="chip" data-category="Sports &amp; Outdoors">Sports &amp; Outdoors</button>
+        </div>
+
+        <label class="ungating-select">
+          <span class="select-label">Ungating</span>
+          <select id="ungating-filter">
+            <option value="all">All levels</option>
+            <option value="low">Low / Low–Med</option>
+            <option value="med">Med</option>
+            <option value="high">Med–High / High</option>
+          </select>
+        </label>
+      </div>
+      <p class="results-meta"><span id="results-count">16</span> products shown</p>
+    </div>
+
+    <section class="catalog" aria-label="Product catalog">
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No products match your filters. Try clearing search or switching category.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Wholesale → Amazon</p>
+        <p class="footer-tag">Texas LLC research catalog · not a buy list</p>
+      </div>
+      <div class="footer-disclaimer">
+        <p><strong>Disclaimer:</strong> This site is for research education only — not financial, legal, or selling advice.
+          Always verify Seller Central eligibility, run Amazon’s Revenue Calculator, and require authorized invoices.
+          Do not use fake ungating services. Faire inventory cannot be sold on Amazon (Faire TOS bans Amazon marketplace fulfillment).
+          Prices shown are approximate public snapshots as of 2026-09-23 and must be re-checked before purchasing inventory.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="modal">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close details">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
