@@ -3,63 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Wholesale → Amazon research catalog for a Texas LLC — curated product picks with ungating notes, wholesale channels, and cautions." />
-  <title>Wholesale → Amazon · Texas LLC Research Picks</title>
+  <meta name="description" content="Product research catalog for a Texas wholesale→Amazon seller — starter basket, ungating notes, and wholesale contact stubs." />
+  <title>Wholesale → Amazon · Texas Research Catalog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="mesh" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
-
   <header class="site-header">
-    <div class="brand-lockup">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <div>
-        <p class="eyebrow">Texas LLC · Product Research</p>
-        <p class="brand-name">Amazon Wholesale Picks</p>
+    <div class="header-inner">
+      <div class="brand-lockup">
+        <span class="brand-mark" aria-hidden="true">TX</span>
+        <div>
+          <p class="eyebrow">Texas LLC · Research notes</p>
+          <p class="brand-name">Wholesale → Amazon Catalog</p>
+        </div>
       </div>
+      <nav class="header-nav" aria-label="Sections">
+        <a href="#starter">$500 starter</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+      <p class="header-meta">Snapshot · Sep 23, 2026</p>
     </div>
-    <p class="header-meta">Snapshot · 2026-09-23</p>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="hero-kicker">Curated research catalog</p>
-        <h1>Wholesale <span class="arrow">→</span> Amazon</h1>
-        <p class="hero-sub">
-          Sixteen research picks for a Texas LLC building a wholesale-to-Amazon pipeline —
-          Home &amp; Kitchen, Pet Accessories, Office, and Sports &amp; Outdoors —
-          with ungating signals, wholesale notes, and real cautions.
+    <section class="intro">
+      <div class="intro-inner">
+        <h1>Product research catalog</h1>
+        <p class="intro-lede">
+          Sixteen wholesale research picks for a Texas LLC testing a wholesale→Amazon pipeline —
+          Home &amp; Kitchen, Pet Accessories, Office, and Sports &amp; Outdoors.
+          Photos fill in when verified image URLs are available; until then each card keeps a clean photo slot.
         </p>
-        <div class="hero-stats" role="list">
-          <div class="stat" role="listitem">
-            <span class="stat-num">16</span>
-            <span class="stat-label">Products</span>
-          </div>
-          <div class="stat" role="listitem">
-            <span class="stat-num">4</span>
-            <span class="stat-label">Categories</span>
-          </div>
-          <div class="stat" role="listitem">
-            <span class="stat-num">TX</span>
-            <span class="stat-label">LLC Focus</span>
-          </div>
-        </div>
+        <ul class="intro-bullets">
+          <li>Filter by category or ungating level, then open Details for notes</li>
+          <li>Use <strong>View on Amazon</strong> to verify the live listing</li>
+          <li>Confirm Seller Central eligibility and run the Revenue Calculator before any PO</li>
+        </ul>
       </div>
-      <aside class="hero-card">
-        <h2 class="hero-card-title">How to use this catalog</h2>
-        <ol class="hero-steps">
-          <li>Filter by category or ungating level</li>
-          <li>Open Details for wholesale notes &amp; cautions</li>
-          <li>Verify ASIN eligibility in Seller Central</li>
-          <li>Run Revenue Calculator before any PO</li>
-        </ol>
-        <p class="hero-card-note">Prices are approximate public snapshots as of 2026-09-23. Always re-check.</p>
-      </aside>
+    </section>
+
+    <section class="starter" id="starter" aria-labelledby="starter-title">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Inventory test · ~$500</p>
+            <h2 id="starter-title">$500 starter basket</h2>
+          </div>
+          <p class="section-note">
+            Four lower-friction SKUs across categories. Estimated inventory spend is a research guess for a first small PO —
+            re-check wholesale case packs and fees before buying.
+          </p>
+        </div>
+        <div class="starter-grid" id="starter-grid"></div>
+        <p class="starter-total" id="starter-total"></p>
+      </div>
     </section>
 
     <div class="filter-bar" id="filter-bar">
@@ -94,28 +95,85 @@
       <p class="results-meta"><span id="results-count">16</span> products shown</p>
     </div>
 
-    <section class="catalog" aria-label="Product catalog">
-      <div class="product-grid" id="product-grid"></div>
-      <p class="empty-state" id="empty-state" hidden>No products match your filters. Try clearing search or switching category.</p>
+    <section class="catalog" id="catalog" aria-label="Product catalog">
+      <div class="section-inner">
+        <div class="section-head section-head-compact">
+          <h2>Full catalog</h2>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+        <p class="empty-state" id="empty-state" hidden>No products match your filters. Try clearing search or switching category.</p>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Research stub</p>
+            <h2 id="contacts-title">Wholesale contacts</h2>
+          </div>
+          <p class="section-note">
+            Placeholders for distributors, brand dealer programs, and invoice paths.
+            Fill from later research — do not invent emails or claim authorization you do not have.
+          </p>
+        </div>
+        <div class="contacts-grid" id="contacts-grid">
+          <article class="contact-card">
+            <h3>Home &amp; Kitchen distributors</h3>
+            <p class="contact-meta">Channel stub</p>
+            <dl class="contact-dl">
+              <div><dt>Sources</dt><dd>Foodservice / housewares distributors (e.g. WebstaurantStore-style catalogs), brand dealer portals</dd></div>
+              <div><dt>Ask for</dt><dd>Amazon-eligible authorized invoices; written online-resale rights</dd></div>
+              <div><dt>Contact</dt><dd class="muted">To be filled from research</dd></div>
+            </dl>
+          </article>
+          <article class="contact-card">
+            <h3>Pet specialty wholesale</h3>
+            <p class="contact-meta">Channel stub</p>
+            <dl class="contact-dl">
+              <div><dt>Sources</dt><dd>Pet wholesale houses; brand wholesale applications (e.g. Outward Hound, Hagen/Catit)</dd></div>
+              <div><dt>Ask for</dt><dd>Marketplace resale permission in writing — many pet distributors restrict 3P</dd></div>
+              <div><dt>Contact</dt><dd class="muted">To be filled from research</dd></div>
+            </dl>
+          </article>
+          <article class="contact-card">
+            <h3>Office &amp; school supply</h3>
+            <p class="contact-meta">Channel stub</p>
+            <dl class="contact-dl">
+              <div><dt>Sources</dt><dd>Office distributors; Mead/ACCO and 3M dealer networks where authorized</dd></div>
+              <div><dt>Ask for</dt><dd>Clear authorized invoices; avoid gray-market Post-it / major brand stock</dd></div>
+              <div><dt>Contact</dt><dd class="muted">To be filled from research</dd></div>
+            </dl>
+          </article>
+          <article class="contact-card">
+            <h3>Sports &amp; outdoors dealers</h3>
+            <p class="contact-meta">Channel stub</p>
+            <dl class="contact-dl">
+              <div><dt>Sources</dt><dd>Franklin Sports dealer/wholesale programs; sporting-goods distributors</dd></div>
+              <div><dt>Ask for</dt><dd>Amazon-eligible invoices and current MAP policy</dd></div>
+              <div><dt>Contact</dt><dd class="muted">To be filled from research</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-grid">
+    <div class="footer-inner">
       <div>
         <p class="footer-brand">Wholesale → Amazon</p>
         <p class="footer-tag">Texas LLC research catalog · not a buy list</p>
       </div>
       <div class="footer-disclaimer">
-        <p><strong>Disclaimer:</strong> This site is for research education only — not financial, legal, or selling advice.
+        <p><strong>Disclaimer:</strong> Research education only — not financial, legal, or selling advice.
           Always verify Seller Central eligibility, run Amazon’s Revenue Calculator, and require authorized invoices.
           Do not use fake ungating services. Faire inventory cannot be sold on Amazon (Faire TOS bans Amazon marketplace fulfillment).
-          Prices shown are approximate public snapshots as of 2026-09-23 and must be re-checked before purchasing inventory.</p>
+          Prices shown are approximate public snapshots as of Sep 23, 2026 and must be re-checked before purchasing inventory.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Modal -->
   <div class="modal-backdrop" id="modal-backdrop" hidden>
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="modal">
       <button type="button" class="modal-close" id="modal-close" aria-label="Close details">&times;</button>

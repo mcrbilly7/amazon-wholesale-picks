@@ -1,27 +1,46 @@
 # Wholesale → Amazon
 
-A beautiful static research catalog of **16 wholesale product picks** for a **Texas LLC** exploring Amazon FBA / wholesale-to-Amazon. Built for GitHub Pages — no build step.
+A light, paper-style **research catalog** of **16 wholesale product picks** for a **Texas LLC** exploring Amazon FBA / wholesale-to-Amazon. Built for GitHub Pages — no build step.
 
 ## What this site is for
 
-- Editorial product research notes (not a buy list or financial advice)
-- Quick filters by category, ungating level, and search
-- ASIN-accurate Amazon links plus wholesale notes and cautions
-- Reminder that prices are approximate public snapshots as of **2026-09-23** and must be re-checked
+- Product research notes with photo slots, Amazon CTAs, and ungating / wholesale cautions (not a buy list)
+- **$500 starter basket** of lower-friction SKUs at the top
+- Filters by category, ungating level, and search; detail modal for notes
+- **Wholesale contacts** stub section ready to fill from later research
+- Reminder that prices are approximate public snapshots as of **Sep 23, 2026** and must be re-checked
+
+## Design notes
+
+- Warm off-white / charcoal / deep teal editorial look (not a dark SaaS landing page)
+- Cards use a 4:3 photo area: real `imageUrl` when present, otherwise a clean “Photo pending” placeholder
+- Do **not** invent ASINs or fake image URLs — merge verified URLs from `research/` when available
+
+## Product schema extras
+
+Optional fields on each product (in `products.js` / `products.json`):
+
+| Field | Purpose |
+|------|---------|
+| `imageUrl` | Verified product image URL, or `null` |
+| `wholesaleUrl` | Distributor / dealer page, or `null` |
+| `wholesaleSourceName` | Human-readable channel name, or `null` |
+| `contactEmail` | Research contact, or `null` |
+| `starterPick` | `true` if included in the $500 starter basket |
+| `estimatedInventorySpend` | Rough first-PO inventory guess string |
 
 ## Files
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Page structure, hero, filters, modal shell |
-| `styles.css` | Charcoal / amber editorial design (Fraunces + DM Sans) |
-| `app.js` | Client-side render, filters, modal |
-| `products.js` | `window.PRODUCTS` data (works with `file://` and Pages) |
+| `index.html` | Layout: intro, starter basket, filters, catalog, contacts, modal |
+| `styles.css` | Light editorial catalog styles (Source Serif 4 + IBM Plex Sans) |
+| `app.js` | Render cards/images, starter section, filters, modal |
+| `products.js` | `window.PRODUCTS` (works with `file://` and Pages) |
 | `products.json` | Same catalog as portable JSON |
+| `research/` | Optional later drops (`products-v2.json`, `image-probe.json`) for verified image URLs |
 
 ## Open locally
-
-**Recommended (avoids `file://` quirks):**
 
 ```bash
 cd amazon-wholesale-picks
@@ -30,17 +49,15 @@ python3 -m http.server 8080
 
 Then open [http://localhost:8080](http://localhost:8080).
 
-You can also open `index.html` directly in a browser. Data loads from `products.js`, so the catalog works offline without a fetch to `products.json`.
+You can also open `index.html` directly. Data loads from `products.js`, so the catalog works offline without fetching `products.json`.
 
 ## Enable GitHub Pages
 
-1. Push this folder to a GitHub repository (as the repo root, or as a `/docs` folder, or from a `gh-pages` branch).
-2. In the repo: **Settings → Pages**.
-3. Under **Build and deployment**, set Source to **Deploy from a branch**.
-4. Choose the branch and folder (`/` or `/docs`), then Save.
-5. After a minute or two, open the published URL.
+1. Push this folder to a GitHub repository (repo root, `/docs`, or `gh-pages`).
+2. **Settings → Pages** → Source: **Deploy from a branch**.
+3. Choose branch and folder, Save, then open the published URL.
 
-No Node/npm build is required — Pages serves the static files as-is.
+No Node/npm build is required.
 
 ## Disclaimer
 
