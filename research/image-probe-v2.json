@@ -1,0 +1,86 @@
+[
+  {
+    "asin": "B01AV0X20I",
+    "finalUrl": "https://www.amazon.com/dp/B01AV0X20I?th=1",
+    "imageUrl": "https://m.media-amazon.com/images/I/51teVAo8egL._AC_SL1000_.jpg",
+    "priceText": "$9.75",
+    "notes": "Product page loaded; main image observed."
+  },
+  {
+    "asin": "B00CLFS4HS",
+    "finalUrl": "https://www.amazon.com/dp/B00CLFS4HS",
+    "imageUrl": "https://m.media-amazon.com/images/I/71kpjYLlCbL._AC_SL1500_.jpg",
+    "priceText": "$10.73",
+    "notes": "Product page loaded; main image observed."
+  },
+  {
+    "asin": "B00HIJDKLW",
+    "finalUrl": "https://www.amazon.com/dp/B06Y2H9MQ1?th=1",
+    "imageUrl": "https://m.media-amazon.com/images/I/81Vy8hoEouL._AC_SL1500_.jpg",
+    "priceText": "",
+    "notes": "Redirected to ASIN B06Y2H9MQ1; currently unavailable; main image observed."
+  },
+  {
+    "asin": "B0BCQQRCWL",
+    "finalUrl": "https://www.amazon.com/dp/B0BCQQRCWL?th=1",
+    "imageUrl": "https://m.media-amazon.com/images/I/917kyGrfOSL._AC_SL1500_.jpg",
+    "priceText": "$19.99",
+    "notes": "Product page loaded; main image observed."
+  },
+  {
+    "asin": "B00IYO0RL6",
+    "finalUrl": "https://www.amazon.com/dp/B000WJMM0U?th=1",
+    "imageUrl": "https://m.media-amazon.com/images/I/61VKOx1JbWL._AC_SL1500_.jpg",
+    "priceText": "",
+    "notes": "Redirected to ASIN B000WJMM0U; currently unavailable; main image observed."
+  },
+  {
+    "asin": "B000F4AVPA",
+    "finalUrl": "https://www.amazon.com/dp/B000F4AVPA?th=1",
+    "imageUrl": "https://m.media-amazon.com/images/I/714HUsBpO+L._AC_SL1500_.jpg",
+    "priceText": "$8.79",
+    "notes": "Product page loaded; main image observed."
+  },
+  {
+    "asin": "B07L8LWHDY",
+    "finalUrl": "https://www.amazon.com/dp/B01JCNEIC6?th=1",
+    "imageUrl": "https://m.media-amazon.com/images/I/71wcm-y1asL._AC_SL1500_.jpg",
+    "priceText": "$18.39",
+    "notes": "Redirected to ASIN B01JCNEIC6; main image observed."
+  },
+  {
+    "asin": "B00L3O4JI6",
+    "finalUrl": "https://www.amazon.com/dp/B00L3O4JI6?th=1",
+    "imageUrl": "https://m.media-amazon.com/images/I/811O8lYB5uL._AC_SL1500_.jpg",
+    "priceText": "$8.63",
+    "notes": "Product page loaded; main image observed."
+  },
+  {
+    "asin": "B09B188SM5",
+    "finalUrl": "https://www.amazon.com/dp/B09B188SM5?th=1",
+    "imageUrl": "https://m.media-amazon.com/images/I/71SWJBvwIkL._AC_SL1500_.jpg",
+    "priceText": "$24.95",
+    "notes": "Product page loaded; main image observed."
+  },
+  {
+    "asin": "B01FRSYVOK",
+    "finalUrl": "https://www.amazon.com/dp/B01BPDXVXI?th=1",
+    "imageUrl": "https://m.media-amazon.com/images/I/71lRLVSvLkL._AC_SL1500_.jpg",
+    "priceText": "",
+    "notes": "Redirected to ASIN B01BPDXVXI; currently unavailable; main image observed."
+  },
+  {
+    "asin": "B016Z4C9LC",
+    "finalUrl": "https://www.amazon.com/dp/B009M9940W?th=1&psc=1",
+    "imageUrl": "https://m.media-amazon.com/images/I/917dFoWlkRL._AC_SL1500_.jpg",
+    "priceText": "$16.03",
+    "notes": "Redirected to ASIN B009M9940W; main image observed."
+  },
+  {
+    "asin": "B08N5WRWNW",
+    "finalUrl": "https://www.amazon.com/dp/B08N5WRWNW",
+    "imageUrl": "",
+    "priceText": "",
+    "notes": "404 Page Not Found; no product image captured."
+  }
+]

@@ -1,37 +1,58 @@
 [
   {
+    "asin": "B01AV0X20I",
+    "name": "iDesign Clarity Interlocking Drawer Organizer XL",
+    "imageUrl": "https://m.media-amazon.com/images/I/51teVAo8egL._AC_SL1000_.jpg",
+    "source": "amazon.com/dp/B01AV0X20I (hiRes)",
+    "httpStatus": 200
+  },
+  {
+    "asin": "B00CLFS4HS",
+    "name": "Progressive Prepworks Avocado Keeper",
+    "imageUrl": "https://m.media-amazon.com/images/I/71kpjYLlCbL._AC_SL1500_.jpg",
+    "source": "amazon.com/dp/B00CLFS4HS (hiRes)",
+    "httpStatus": 200
+  },
+  {
+    "asin": "B00HIJDKLW",
+    "name": "Five Star Desk Organizer 5 Compartments",
+    "imageUrl": "https://m.media-amazon.com/images/I/81Vy8hoEouL._AC_SL1500_.jpg",
+    "source": "amazon.com/dp/B00HIJDKLW (hiRes)",
+    "httpStatus": 200
+  },
+  {
+    "asin": "B0BCQQRCWL",
+    "name": "Franklin Sports Activator Pickleball Set",
+    "imageUrl": "https://franklinsports.com/media/catalog/product/5/2/52742-phase1-main.jpg",
+    "source": "franklinsports.com (SKU 52742)",
+    "httpStatus": 200
+  },
+  {
     "asin": "B00IYO0RL6",
-    "amazonUrl": "https://www.amazon.com/dp/B00IYO0RL6",
+    "name": "OXO Good Grips Expandable Utensil Organizer",
     "imageUrl": "https://m.media-amazon.com/images/I/61VKOx1JbWL._AC_SL1500_.jpg",
-    "priceText": "",
-    "notes": "Page redirected to https://www.amazon.com/dp/B000WJMM0U?th=1 (OXO Good Grips Expandable Utensil Organizer); main buy box showed Currently unavailable, with no visible price."
+    "source": "amazon.com/dp/B00IYO0RL6 (hiRes); oxo.com also has related Large Expandable image",
+    "httpStatus": 200
   },
   {
-    "asin": "B09B188SM5",
-    "amazonUrl": "https://www.amazon.com/dp/B09B188SM5",
-    "imageUrl": "https://m.media-amazon.com/images/I/71SWJBvwIkL._AC_SL1500_.jpg",
-    "priceText": "$24.95",
-    "notes": "Product page loaded normally; visible Buy New price was $24.95."
+    "asin": "B000F4AVPA",
+    "name": "Chuckit! Ultra Ball Medium 2-pack",
+    "imageUrl": "https://m.media-amazon.com/images/I/714HUsBpO+L._AC_SL1500_.jpg",
+    "source": "amazon.com/dp/B000F4AVPA (hiRes)",
+    "httpStatus": 200
   },
   {
-    "asin": "B01FRSYVOK",
-    "amazonUrl": "https://www.amazon.com/dp/B01FRSYVOK",
-    "imageUrl": "https://m.media-amazon.com/images/I/71lRLVSvLkL._AC_SL1500_.jpg",
-    "priceText": "",
-    "notes": "Page redirected to https://www.amazon.com/dp/B01BPDXVXI?th=1 (Joseph Joseph Nest Plus Utensil 5-Piece Set); main buy box showed Currently unavailable, with no visible price."
+    "asin": "B07L8LWHDY",
+    "name": "Rubbermaid Brilliance Food Storage",
+    "imageUrl": "https://s7d1.scene7.com/is/image/NewellBrands/IFOOD269_2199772_A1C0_GLBL99_ATF_Image_01?wid=1000&hei=1000",
+    "source": "rubbermaid.com og:image (NewellBrands Scene7 CDN, model 2199772)",
+    "httpStatus": 200
   },
   {
-    "asin": "B00KH9B2IS",
-    "amazonUrl": "https://www.amazon.com/dp/B00KH9B2IS",
-    "imageUrl": "",
-    "priceText": "",
-    "notes": "Amazon returned HTTP 404 Page Not Found; no product image or price."
-  },
-  {
-    "asin": "B07G7G5V5H",
-    "amazonUrl": "https://www.amazon.com/dp/B07G7G5V5H",
-    "imageUrl": "",
-    "priceText": "",
-    "notes": "Amazon returned HTTP 404 Page Not Found; no product image or price."
+    "asin": "B00L3O4JI6",
+    "name": "Outward Hound Fun Feeder Slo Bowl Medium",
+    "imageUrl": "https://m.media-amazon.com/images/I/811O8lYB5uL._AC_SL1500_.jpg",
+    "source": "amazon.com/dp/B00L3O4JI6 (hiRes)",
+    "httpStatus": 200
   }
 ]
